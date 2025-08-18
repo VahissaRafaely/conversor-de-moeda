@@ -8,7 +8,8 @@ public class CurrencyParser {
         return response.conversion_rates;
     }
 
-    private class CurrencyResponse {
+    private static class CurrencyResponse {
         Map<String, Double> conversion_rates;
     }
-}
+    }
+

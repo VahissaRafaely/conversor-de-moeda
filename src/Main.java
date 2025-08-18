@@ -3,12 +3,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         CurrencyService service = new CurrencyService();
         CurrencyParser parser = new CurrencyParser();
         CurrencyConverter converter = new CurrencyConverter();
 
-        try {
+        // Scanner dentro do try-with-resources para fechamento automático
+        try (Scanner scanner = new Scanner(System.in)) {
             String base = "USD"; // moeda base fixa para consulta
             String json = service.getRates(base);
             Map<String, Double> rates = parser.parseRates(json);
@@ -55,8 +55,6 @@ public class Main {
 
         } catch (Exception e) {
             System.out.println("Erro: " + e.getMessage());
-        } finally {
-            scanner.close();
         }
     }
 }
