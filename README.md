@@ -76,5 +76,4 @@ Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes
 🤝 Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
-![Demonstração do Conversor](conversor%20de%20moeda.gif)
-
+![conversor de moeda](https://github.com/user-attachments/assets/dd6240f0-6733-4ff4-8d69-2b5055d7f692)
